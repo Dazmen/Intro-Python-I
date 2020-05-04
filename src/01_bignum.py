@@ -3,3 +3,5 @@
 
 # YOUR CODE HERE
 print(2**65536)
+
+# How am I expected to try this in "the JS console"? Make a 01_bignum.js file and run the same thing?
