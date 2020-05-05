@@ -30,3 +30,27 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+
+# get args from command line (also figure out how I am suppose to provide args in the command line from VScode???)
+
+def calender_func():
+  # set up current date defaults
+  today = datetime.today()
+  year = today.year
+  month = today.month
+
+  # set up inputs for year and month
+  input_y = input('What calendar year would you like to view? (digits only!) ex. 2019 ')
+  input_m = input('What calendar mount would you like to view? (digits only! ex. 09) ')
+
+  # conditionals to replace defaults with valid inputs
+  if len(input_y) > 0 and len(input_y) <= 4 and input_y.isdigit():
+    year = int(input_y)
+
+  if len(input_m) > 0 and len(input_m) <= 2 and input_m.isdigit():
+    month = int(input_m)
+
+  print(calendar.month(year, month))
+
+calender_func()
+
