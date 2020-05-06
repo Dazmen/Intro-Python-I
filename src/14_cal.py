@@ -32,6 +32,9 @@ import calendar
 from datetime import datetime
 
 # get args from command line (also figure out how I am suppose to provide args in the command line from VScode???)
+args = sys.argv
+
+print(args) # to complete this as fully defined I would simply make input_y = args[1] and input_m = args[2]
 
 def calender_func():
   # set up current date defaults
